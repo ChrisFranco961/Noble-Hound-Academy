@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0,1);
+}
+    #fronticon{
+    transform: translateX(-5vw);
+}
+
+#start{
+    transform: translateY(-600%);
+    font-size: 5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 0.6;
+    border: solid whitesmoke 1vw;
+    border-radius: 5%;
+    padding: 2vw;
+    color: whitesmoke;
+    background-color: darkblue;
+
+    text-decoration: none;
+    }
+#logoicon{
+    height: 70vw;
+    width: 90vw;
+    transform: translate(0%,-30%);
+    border: solid white 2vw;
+    border-radius: 10%;
+}
+#logo{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#catalog{
+   
+    font-size: 4vw;
+    
+    padding: 1vw;
+    display: flex;
+    position: sticky;
+    gap: 3vw;
+    top:0;
+}
+.catalog{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0;
+    font-size: 5vw;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+.catalog:active{
+    background-color:rgb(0, 115, 255);
+    padding-left: 1vw;
+    border-radius: 10%;
+    padding-right: 1vw;
+}
+#servicestitle{
+    background: rgb(0,103,196);
+    background: linear-gradient(90deg, rgba(0,103,196,1) 0%, rgba(0,64,115,1) 54%, rgba(0,3,6,1) 100%);
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    transform: translateY(30%);
+    font-size: 8vw;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: italic;
+    animation: servicetitle .3s ease-in 1 ;
+
+}
+@keyframes servicetitle {
+    from{
+        transform: translate(-100%,30%);
+    }
+    to{
+        transform: translate(0,30%);
+    }
+}
+#servicescontainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#traineddog{
+    transform: translate(-15%,20%);
+
+    height:40vh;
+    opacity: .3;
+}
+#servicelist{
+    position: absolute;
+    transform: translateY(55%);
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    color: whitesmoke;
+
+}
+#puppyicon{
+
+    height: 15vh;
+    width: auto;
+    animation: serviceicon 1s ease-in 1;
+    
+}
+
+@keyframes serviceicon {
+    from{
+        scale: 0%;
+    }
+    to{
+        scale: 100%;
+    }
+    
+}
+#puppy{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.servicevideo{
+    display:none;
+    z-index: 2;
+    width: 90%;
+}
+#youtubeservice{
+    height: 50vh;
+    transform: translateY(-30%);
+}
+.servicevideo>button{
+  border-radius: 50%;
+  height: 8vw;
+  position: relative;
+  transform: translate(600%,400%);
+  font-size: 5vw;
+  font-weight: bolder;
+  text-align: center;
+  background-color: blue;
+  color: whitesmoke;
+}
+iframe{
+   
+    width: 90%;
+    z-index: 2;
+    border-radius: 5%;
+   box-shadow: 1vw 1vw 1vw 1vw rgb(1, 1, 75);
+    height: auto;
+    position: absolute;
+    top: 50%;
+
+    
+}
+#facilitiescontainer{
+    color: whitesmoke;
+}
+#background{
+    opacity: .7;
+    height: auto;
+    width: 80vw;
+    position: absolute;
+    transform: translate(5vh,30vh);
+    animation: center .3s ease-in 1;
+}
+@keyframes center {
+    from{
+        transform: scale(300%)
+        translate(0);
+    }
+    to{
+        transform: scale(100%)
+        translate(5vh,30vh);
+    }
+    
+}
+#facility1{
+    border-radius: 10%;
+    height: 20vh;
+    width: auto;
+}
+#facility2{
+    border-radius: 10%;
+
+    height: 20vh;
+    width: auto;
+}
+#facility3{
+    border-radius: 10%;
+
+    height: 20vh;
+    width: auto;
+}
+#facilitiescontainer{
+    
+    position: absolute;
+}
+#fac1{
+    display: flex;
+    font-size: 3vw;
+    gap: 2vw;
+    animation: facin 1s ease-in 1;
+}
+#fac2{
+    display: flex;
+    font-size: 3vw;
+    animation: facin1 1s ease-in 1;
+    gap: 2vw;
+}
+#fac3{
+    animation: facin 1s ease-in 1;
+    display: flex;
+    font-size: 3vw;
+    gap: 2vw;
+}
+@keyframes facin {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes facin1 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+#facilityimg{
+    display: flex;
+    flex-direction: column;
+gap: 5vh;
+}
+#feedback{
+    position: absolute;
+    color: whitesmoke;
+}
+#five{
+    transform: translateX(20%);
+    width: 70vw;
+    height: auto;
+    animation: five 1s ease-out 1;
+}
+#feedbacktext{
+    animation: feed 1s ease-in-out 1;
+}
+@keyframes feed {
+    from{
+        opacity: 0;
+    }    
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes five {
+from{
+    transform: scale(600%) translate(20%,-100%);
+}
+to{
+    transform: scale(100%) translateX(20%);
+}
+}
+#map{
+    height: 30%;
+    opacity: 0.8;
+    
+}
+
+#phone{
+    height: 10vw;
+    width: 10vw;
+    animation: phone 1s ease-in infinite;
+    
+}
+@keyframes phone {
+    0%{
+        transform:rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+    
+}
+#contactinfo{
+    display: flex;
+    justify-content: center;
+
+}
+.contacttext{
+    color: whitesmoke;
+    text-decoration: none;
+    opacity: 1;
+}
+#cont{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    flex-direction: column;
+}
+@media only screen and (min-width: 600px) {
+#logoicon{
+    height: 40vh;
+    width: auto;
+    border: solid whitesmoke 1vh;
+}
+#fronticon{
+    transform: translateX(-5%);
+}
+#background{
+    height: 30vw;
+    width: auto;
+    transform: translate(33vw,40vh);
+
+}
+@keyframes center {
+    from{
+        transform: translate(30vw,40vh) scale(200%);
+
+    }
+    to{
+
+    }
+}
+#servicelist{
+    margin: 0px;
+    transform: translateY(20vw);
+ flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+
+}
+#puppy{
+    width: 20vw;
+}
+#catalog{
+    height: 3vh;
+    justify-content: center;
+    gap: 10vw;
+   
+}
+.catalog{
+    font-size: 3vh;
+   
+}
+#servicestitle{
+    margin: 0;
+
+}
+#youtubeservice{
+ height: 70vh;
+ width: 50vw; 
+ position: absolute;
+ transform: translate(40%,-30%);  
+}
+.servicevideo>button{
+    font-size: 4vh;
+    height: 5vh;
+    transform: translate(2000%,-70%);
+}
+.catalog:active{
+    background-color:whitesmoke;
+    padding-left: 0vw;
+    border-radius: 10%;
+    padding-right: 0vw;
+}
+.catalog:hover{
+    background-color: rgb(0, 140, 255);
+    padding: 1vh;
+    border-radius: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#fac1{
+    display: flex;
+    font-size: 1.5vw;
+    gap: 2vw;
+    animation: facin 1s ease-in 1;
+    align-items: center;
+}
+#fac2{
+    display: flex;
+    font-size: 1.5vw;
+    animation: facin1 1s ease-in 1;
+    gap: 2vw;
+    align-items: center;
+}
+#fac3{
+    animation: facin 1s ease-in 1;
+    display: flex;
+    font-size: 1.5vw;
+    gap: 2vw;
+   
+    align-items: center;
+}
+#facility1{
+    border-radius: 10%;
+    height: auto;
+    width: 50vw;
+    opacity: .8;
+}
+#facility2{
+    border-radius: 10%;
+
+    height: auto;
+    width: 50vw;
+    opacity: .8;
+}
+#facility3{
+    border-radius: 10%;
+
+    height: auto;
+    opacity: .8;
+    width: 50vw;
+}
+#facilityimg{
+    transform: translateY(10%);
+}
+#five{
+    width: 40vw;
+    height: auto;
+    transform: translate(76%,15%);
+    animation: five 1s ease-out 1;
+}
+@keyframes five {
+    from{
+        transform: scale(600%) translate(20%,-100%);
+    }
+    to{
+        transform: scale(100%) translateX(65%,10%);
+    }
+}
+#feedbacktext{
+    font-size: 3vh;
+    transform: translateY(30%);
+}
+#map{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    transform: translateY(-60%);
+}
+#cont{
+    font-size: 3vh;
+    transform: translateY(80%);
+
+}
+}
